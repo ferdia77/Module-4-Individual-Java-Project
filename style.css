@@ -1,0 +1,64 @@
+.content__wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    padding: 20px 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav__link:nth-child(1) {
+    color: blueviolet;
+}
+
+.nav__link:nth-child(2) {
+    color: #242424;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav__link {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.btn__contact {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 50px;
+    height: 24px;
+    width: 90px;
+    padding: 8px 28px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.blinker {
+    display: flex;
+}
+
+.blinker__logo {
+    height: 40px;
+    width: 130px;
+}
+
+.blinker__text {
+    color: blueviolet;
+}
