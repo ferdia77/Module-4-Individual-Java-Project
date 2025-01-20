@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+* {
+    font-family: roboto, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .content__wrapper {
     margin: 0 auto;
     width: 100%;
@@ -21,7 +29,7 @@ nav {
 }
 
 .nav__link:nth-child(1) {
-    color: blueviolet;
+    color: #6030b1;
 }
 
 .nav__link:nth-child(2) {
@@ -33,17 +41,16 @@ nav {
 }
 
 .nav__link {
-    display: flex;
-    justify-content: space-between;
+    margin: 0 24px;
     text-decoration: none;
 }
 
 .btn__contact {
-    background-color: blueviolet;
+    background-color: #6030b1;
     color: white;
     border-radius: 50px;
-    height: 24px;
-    width: 90px;
+    height: 44px;
+    width: 140px;
     padding: 8px 28px;
     font-weight: 700;
     display: flex;
@@ -60,5 +67,65 @@ nav {
 }
 
 .blinker__text {
-    color: blueviolet;
+    color: #6030b1;
+}
+
+.header__description {
+    color: #6030b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 57px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header__find {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.purple {
+    color: #6030b1;
+    padding-left: 16px;
+}
+
+.search__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__bar {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #0a1f44;
+    font-size: 24px;
+    height: 70px;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 15px;
+    line-height: 40px;
+}
+
+.not__loading {
+    border: 1px solid #6030b1;
+    background-color: #6030b1;
+    box-shadow: 7px 7px 14px rgba(134, 93, 204, .3);
+    cursor: pointer;
+    width: 200px;
+    height: 70px;
+    margin-left: 20px;
+    font-size: 40px;
+    color: #fff;
+    border-radius: 20px;
+    transition: all .25s ease;
 }
