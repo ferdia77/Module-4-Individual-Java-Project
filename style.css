@@ -15,7 +15,7 @@
 }
 
 nav {
-    padding: 20px 160px;
+    padding: 28px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -45,16 +45,27 @@ nav {
     text-decoration: none;
 }
 
+.nav__link--white {
+    color: #fff;
+    margin: 0 24px;
+    text-decoration: none;
+}
+
 .btn__contact {
     background-color: #6030b1;
     color: white;
     border-radius: 50px;
-    height: 44px;
+    height: 48px;
     width: 140px;
     padding: 8px 28px;
     font-weight: 700;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.btn__contact:hover {
+    background-color: rgb(24, 104, 209);
 }
 
 .blinker {
@@ -63,7 +74,7 @@ nav {
 
 .blinker__logo {
     height: 40px;
-    width: 130px;
+    width: 136px;
 }
 
 .blinker__text {
@@ -90,7 +101,7 @@ nav {
     font-weight: 700;
     line-height: 1.5;
     text-transform: uppercase;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .purple {
@@ -121,11 +132,37 @@ nav {
     background-color: #6030b1;
     box-shadow: 7px 7px 14px rgba(134, 93, 204, .3);
     cursor: pointer;
-    width: 200px;
+    width: 160px;
     height: 70px;
     margin-left: 20px;
     font-size: 40px;
     color: #fff;
     border-radius: 20px;
     transition: all .25s ease;
+}
+
+.fa-search {
+    height: 36px;
+    width: 80px;
+    padding-top: 8px;
+}
+
+.building__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img__building {
+    height: 256px;
+    width: 480px;
+}
+
+.img__carpark {
+  height: 300px;
+  width: 100%;  
+}
+
+.background__img {
+    height: 100px;
 }
