@@ -6,6 +6,20 @@
     box-sizing: border-box;
 }
 
+.navbar__wrapper {
+    background: url("./assets/carpark.8742e246.jpeg");
+}
+
+.navbar__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(41, 25, 71, .83);
+}
+
 .content__wrapper {
     margin: 0 auto;
     width: 100%;
@@ -231,12 +245,3 @@ nav {
     z-index: 1;
 }
 
-.overlay::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(41, 25, 71, .83);
-}
