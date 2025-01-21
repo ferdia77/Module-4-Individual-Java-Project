@@ -199,12 +199,12 @@ nav {
 
 .input__wrapper {
     width: 100%;
-    max-width: 600px;
     position: relative;
     border-radius: 50px;
     overflow: hidden;
 }
 
-.fa-w-16 {
+.svg-inline--fa {
     color: #6030b1;
+    position: absolute;
 }
