@@ -11,7 +11,7 @@
     position: relative;
 }
 
-.overlay {
+.overlay::after {
     content: "";
     position: absolute;
     top: 0;
