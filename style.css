@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
 
-.background__img {
-    background-image: url(./assets/carpark.8742e246.jpeg);
-    width: 100%;
-}
-
 * {
     font-family: roboto, sans-serif;
     margin: 0;
@@ -155,12 +150,6 @@ nav {
     transition: all .25s ease;
 }
 
-.fa-search {
-    height: 36px;
-    width: 80px;
-    padding-top: 8px;
-}
-
 .building__img {
     display: flex;
     align-items: center;
@@ -184,17 +173,30 @@ nav {
     padding-bottom: 30px;
 }
 
-.search__bar--search {
+.search-container {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .search__bar--two {
+    padding-left: 24px;
+    padding-right: 40px;
+    border-radius: 25px;
+    border: 1px solid #0a1f44;
+    font-size: 24px;
+    height: 70px;
     width: 100%;
-    max-width: 640px;
-    height: 60px;
-    border-radius: 50px;
+    min-width: 600px;
+    max-width: 600px;
+    line-height: 40px;
+}
+
+
+.search__btn {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
 }
 
 .input__wrapper {
@@ -202,9 +204,39 @@ nav {
     position: relative;
     border-radius: 50px;
     overflow: hidden;
+    display: flex;
 }
 
 .svg-inline--fa {
     color: #6030b1;
+    right: 10px;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+}
+
+.overlay {
+    background-image: url(./assets/carpark.8742e246.jpeg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(41, 25, 71, .83);
 }
