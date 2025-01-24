@@ -71,9 +71,11 @@ nav {
 }
 
 .nav__link--white {
-    color: #fff;
+    color: white;
     margin: 0 24px;
     text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .btn__contact {
@@ -93,6 +95,20 @@ nav {
     background-color: rgb(24, 104, 209);
 }
 
+.button__contact {
+    background-color: #fff;
+    color: #6030b1;
+    border-radius: 50px;
+    height: 48px;
+    width: 140px;
+    padding: 8px 28px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
 .blinker {
     display: flex;
 }
@@ -100,6 +116,7 @@ nav {
 .blinker__logo {
     height: 40px;
     width: 136px;
+    z-index: 2;
 }
 
 .blinker__text {
@@ -187,11 +204,17 @@ nav {
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .1em;
+    font-size: 45px;
+    z-index: 2;
 }
 
 .search-container {
     display: flex;
     justify-content: center;
+    padding-bottom: 40px;
 }
 
 .search__bar--two {
@@ -207,13 +230,22 @@ nav {
     line-height: 40px;
 }
 
+.search__bar--two:hover {
+    cursor: text;
+}
+
 
 .search__btn {
     position: relative;
     display: inline-block;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
+
+.search__btn:hover {
+    cursor: pointer;
+} 
 
 .input__wrapper {
     width: 100%;
@@ -224,26 +256,21 @@ nav {
 }
 
 .svg-inline--fa {
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+}
+
+.svg-inline--fa-1 {
     color: #6030b1;
     right: 10px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
+    padding-right: 8px;
 }
 
-.overlay {
-    background-image: url(./assets/carpark.8742e246.jpeg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-attachment: fixed;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-}
+
 
