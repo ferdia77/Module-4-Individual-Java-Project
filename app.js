@@ -15,6 +15,7 @@ main();
 function renderMovies() {
     const moviesDataWrapper = document.querySelector ('.movies');
 
+    const movies = getMovies
 
     movies.map(movie => {
        return `<div class="movie">
