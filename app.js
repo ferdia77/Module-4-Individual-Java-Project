@@ -6,7 +6,7 @@ function openSearchResults() {
 
 async function main() {
     const movies = await fetch("https://omdbapi.com/?s=fast&apikey=b59e5615");
-    const moviesData = await film.json();
+    const moviesData = await movies.json();
     console.log(moviesData)
 }
 
