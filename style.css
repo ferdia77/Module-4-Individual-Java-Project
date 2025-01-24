@@ -273,4 +273,11 @@ nav {
 }
 
 
+.search__results {
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 44px;
+    padding-top: 30px;
+}
+
 

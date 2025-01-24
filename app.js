@@ -5,25 +5,32 @@ function openSearchResults() {
 }
 
 async function main() {
-    const film = await fetch("https://omdbapi.com/?s=fast&apikey=b59e5615");
-    const filmData = await film.json();
-    console.log(filmData)
+    const movies = await fetch("https://omdbapi.com/?s=fast&apikey=b59e5615");
+    const moviesData = await film.json();
+    console.log(moviesData)
 }
 
 main();
 
 function renderMovies() {
-   `<div class="movie">
+    const moviesDataWrapper = document.querySelector ('.movies');
+
+
+    movies.map(movie => {
+       return `<div class="movie">
     <figure class="movie__img--wrapper">
-        <img src="${URL.poster}" alt="">
+        <img src="${movie.poster}" alt="">
     </figure>
     <div class="movie__title">
-        ${}
+        
     </div>
     <div class="movie__year">
-        ${}
+        
     </div>
 </div>` 
+    })
+    //moviesDataWrapper.innerHTML =
+   
 }
 
 setTimeout(() =>{
