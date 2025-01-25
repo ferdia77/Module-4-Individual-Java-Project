@@ -18,7 +18,7 @@ function renderMovies(movies) {
     const moviesDataWrapper = document.querySelector ('.movies');
 
     moviesDataWrapper.innerHTML = movies
-        .map((movie) => {
+        .slice(0, 6).map((movie) => {
             return `<div class="movie">
     <figure class="movie__img--wrapper">
         <img src="${movie.Poster}" alt="${movie.Title}">
