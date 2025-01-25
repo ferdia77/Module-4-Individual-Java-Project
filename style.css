@@ -272,6 +272,18 @@ nav {
     padding-right: 8px;
 }
 
+.search__filter--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#filter {
+    height: 30px;
+    width: 140px;
+    border-radius: 16px;
+}
+
 
 .search__results {
     font-size: 30px;

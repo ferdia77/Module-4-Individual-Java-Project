@@ -36,9 +36,9 @@ function renderMovies(movies) {
    
 }
 
-setTimeout(() =>{
+
     renderMovies();
-})
+
     
 
 function getMovies() {
