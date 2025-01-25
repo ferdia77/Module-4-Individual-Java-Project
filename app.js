@@ -7,30 +7,32 @@ function openSearchResults() {
 async function main() {
     const movies = await fetch("https://omdbapi.com/?s=fast&apikey=b59e5615");
     const moviesData = await movies.json();
-    console.log(moviesData)
+    const result = moviesData.Search;
+    console.log(result);
+    renderMovies(result); //pass the data to renderMovies
 }
 
 main();
 
-function renderMovies() {
+function renderMovies(movies) {
     const moviesDataWrapper = document.querySelector ('.movies');
 
-    const movies = getMovies
-
-    movies.map(movie => {
-       return `<div class="movie">
+    moviesDataWrapper.innerHTML = movies
+        .map((movie) => {
+            return `<div class="movie">
     <figure class="movie__img--wrapper">
-        <img src="${movie.poster}" alt="">
+        <img src="${movie.poster}" alt="${movie.Title}">
     </figure>
     <div class="movie__title">
-        
+        ${movie.title}
     </div>
     <div class="movie__year">
-        
+        ${movie.Year}
     </div>
 </div>` 
     })
-    //moviesDataWrapper.innerHTML =
+    .join(''); // Join the array to create a single HTML string
+    
    
 }
 

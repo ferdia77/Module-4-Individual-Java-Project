@@ -280,4 +280,15 @@ nav {
     padding-top: 30px;
 }
 
+.movies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 120px;
+}
+
+.movie {
+    padding: 0 24px;
+}
 
