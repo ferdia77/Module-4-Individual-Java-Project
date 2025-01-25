@@ -21,10 +21,10 @@ function renderMovies(movies) {
         .map((movie) => {
             return `<div class="movie">
     <figure class="movie__img--wrapper">
-        <img src="${movie.poster}" alt="${movie.Title}">
+        <img src="${movie.Poster}" alt="${movie.Title}">
     </figure>
     <div class="movie__title">
-        ${movie.title}
+        ${movie.Title}
     </div>
     <div class="movie__year">
         ${movie.Year}
@@ -35,6 +35,8 @@ function renderMovies(movies) {
     
    
 }
+
+//const firstSix = Array.prototype.slice.call(document.querySelectorAll("selector"), 0, 6);
 
 
     renderMovies();
