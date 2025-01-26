@@ -1,5 +1,13 @@
 // http://www.omdbapi.com/?i=tt3896198&apikey=b59e5615
 
+document.getElementById('searchInput').addEventListener('keypress',
+    (event) => {
+        if(event.key === 'Enter') {
+            handleSearch();
+        }
+    });
+
+
 function openSearchResults() {
     document.body.classList += " results--searched"
 }
@@ -9,15 +17,15 @@ async function main(searchQuery) {
         `https://omdbapi.com/?s=${searchQuery}&apikey=b59e5615`
     );
     const moviesData = await movies.json();
-    const result = moviesData.Search;
-    console.log(result);
-    renderMovies(result); //pass the data to renderMovies
-    updateSearchResultsText(searchQuery); // being added as well the searchQuery
+    if(moviesData.Searh) {
+        renderMovies(moviesData.Search); //pass the data to renderMovies
+        updateSearchResultsText(searchQuery);
+    }
 }
 
 // "https://omdbapi.com/?s=fast&apikey=b59e5615" becomes `https://omdbapi.com/?s=${searchQuery}&apikey=b59e5615`
 
-main();
+
 
 function renderMovies(movies) {
     const moviesDataWrapper = document.querySelector ('.movies');
@@ -55,11 +63,15 @@ updateSearchResultsText();
 //const firstSix = Array.prototype.slice.call(document.querySelectorAll("selector"), 0, 6);
 
 function handleSearch() {
-    const searchQuery = document.getElementById("searchInput").value;
+    const searchQuery = document.getElementById("searchInput").value.trim();
+    if(searchQuery) {
+        openSearchResults();
+        main(searchQuery);
+    }
 
 }
 
-handleSearch();
+
    
 
     
