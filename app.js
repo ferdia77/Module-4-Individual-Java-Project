@@ -22,6 +22,7 @@ main();
 function renderMovies(movies) {
     const moviesDataWrapper = document.querySelector ('.movies');
     const myInput = document.querySelector('#searchinput')
+    console.log(myInput.value) 
     moviesDataWrapper.innerHTML = movies
         .slice(0, 6).map((movie) => {
             return `<div class="movie">
