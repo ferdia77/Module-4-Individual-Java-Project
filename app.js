@@ -46,19 +46,23 @@ renderMovies();
 
 function updateSearchResultsText(searchQuery) {
     const searchResultsElement = document.querySelector(".search__results");
-    searchResultsElement.textContent = Search results for: `${searchQuery}`;
+    searchResultsElement.textContent = `Search results for: ${searchQuery}`;
 }
+
+updateSearchResultsText();
 
 //const firstSix = Array.prototype.slice.call(document.querySelectorAll("selector"), 0, 6);
 
 function handleSearch() {
     const searchQuery = document.getElementById("searchInput").value;
-    
+
 }
+
+handleSearch();
    
 
     
-
+/** 
 function getMovies() {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -137,3 +141,5 @@ function getMovies() {
         }, 1000);
     });
 }
+
+*/
