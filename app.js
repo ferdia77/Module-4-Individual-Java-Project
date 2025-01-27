@@ -17,7 +17,7 @@ async function main(searchQuery) {
         `https://omdbapi.com/?s=${searchQuery}&apikey=b59e5615`
     );
     const moviesData = await movies.json();
-    if(moviesData.Searh) {
+    if(moviesData.Search) {
         renderMovies(moviesData.Search); //pass the data to renderMovies
         updateSearchResultsText(searchQuery);
     }
@@ -52,7 +52,7 @@ function renderMovies(movies) {
 
  
 
-function filterMoviesSearch(event) {
+function main(event) {
     renderMovies(event.target.value);
 } 
     
@@ -67,6 +67,7 @@ updateSearchResultsText();
 //const firstSix = Array.prototype.slice.call(document.querySelectorAll("selector"), 0, 6);
 
 function handleSearch() {
+    
     const searchQuery = document.getElementById("searchInput").value.trim();
     if(searchQuery) {
         openSearchResults();
