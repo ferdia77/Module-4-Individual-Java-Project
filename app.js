@@ -29,8 +29,7 @@ async function main(searchQuery) {
 
 function renderMovies(movies) {
     const moviesDataWrapper = document.querySelector ('.movies');
-    const myInput = document.querySelector('#searchinput')
-    console.log(myInput.value) 
+    const myInput = document.querySelector('#searchinput') 
     moviesDataWrapper.innerHTML = movies
         .slice(0, 6).map((movie) => {
             return `<div class="movie">
@@ -50,7 +49,7 @@ function renderMovies(movies) {
    
 }
 
-renderMovies();
+renderMovies(); 
     
 
 function updateSearchResultsText(searchQuery) {
