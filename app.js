@@ -28,6 +28,7 @@ async function main(searchQuery) {
 
 
 function renderMovies(movies) {
+    if(!movies) return
     const moviesDataWrapper = document.querySelector ('.movies');
     const myInput = document.querySelector('#searchinput') 
     moviesDataWrapper.innerHTML = movies
@@ -49,7 +50,11 @@ function renderMovies(movies) {
    
 }
 
-renderMovies(); 
+ 
+
+function filterMoviesSearch(event) {
+    renderMovies(event.target.value);
+} 
     
 
 function updateSearchResultsText(searchQuery) {
