@@ -52,8 +52,8 @@ function renderMovies(movies) {
 
  
 
-function main(event) {
-    renderMovies(event.target.value);
+function filterMoviesSearch(event) {
+    main(event.target.value);
 } 
     
 
