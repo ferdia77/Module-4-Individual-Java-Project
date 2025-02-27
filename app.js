@@ -58,8 +58,10 @@ function updateSearchResultsText(searchQuery) {
 }
 
 function showSpinnerLoadingState() {
-    const loadingStateElement = document.querySelector ("fa-spinner");
-    loadingStateElement.
+    const isLoading = document.querySelector ("fa-spinner");
+    isLoading.before(await) === true
+    isLoading.after(await) === false
+    isLoading ? display: block : display: none  
 }
  
 
