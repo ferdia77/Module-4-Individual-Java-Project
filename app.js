@@ -29,8 +29,7 @@ async function main(searchQuery) {
 
 
 function renderMovies(movies) {
-    if(!movies) return
-    const defaultSearchText = document.querySelector ("search__results");
+    if(!movies) return 
     const moviesDataWrapper = document.querySelector ('.movies');
     const myInput = document.querySelector('#searchinput') 
     moviesDataWrapper.innerHTML = movies
@@ -48,20 +47,20 @@ function renderMovies(movies) {
 </div>` 
     })
     .join(''); // Join the array to create a single HTML string
-
-
-    if defaultSearchText ? null => display:none  : display moviesDataWrapper
-    
    
 }
 
-function defaultSearchText() {
-    
-        
+function updateSearchResultsText(searchQuery) {
+    const searchResultsElement = document.querySelector ("search__results");
+    searchResultsElement.textContent = searchQuery
+        ? `Search results for: ${searchQuery}`
+        : "Search for your movie";
 }
 
-
-
+function showSpinnerLoadingState() {
+    const loadingStateElement = document.querySelector ("fa-spinner");
+    loadingStateElement.
+}
  
 
 function filterMoviesSearch(event) {
@@ -69,10 +68,7 @@ function filterMoviesSearch(event) {
 } 
     
 
-function updateSearchResultsText(searchQuery) {
-    const searchResultsElement = document.querySelector(".search__results");
-    searchResultsElement.textContent = `Search results for: ${searchQuery}`;
-}
+
 
 updateSearchResultsText();
 
