@@ -61,7 +61,7 @@ function showSpinnerLoadingState() {
     const isLoading = document.querySelector ("fa-spinner");
     isLoading.before(await) === true
     isLoading.after(await) === false
-    isLoading ? display: block : display: none  
+    isLoading ?  display: no display 
 }
  
 
