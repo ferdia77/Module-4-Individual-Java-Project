@@ -23,7 +23,7 @@ async function main(searchQuery) {
     }
 }
 
-// "https://omdbapi.com/?s=fast&apikey=b59e5615" becomes `https://omdbapi.com/?s=${searchQuery}&apikey=b59e5615`
+// "https://omdbapi.com/?s=fast&apikey=b59e5615" becomes  `https://omdbapi.com/?s=${searchQuery}&apikey=b59e5615`
 
 
 
