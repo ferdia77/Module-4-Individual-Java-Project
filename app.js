@@ -1,4 +1,5 @@
 // http://www.omdbapi.com/?i=tt3896198&apikey=b59e5615
+//
 
 document.getElementById('searchInput').addEventListener('keypress',
     (event) => {
@@ -23,12 +24,13 @@ async function main(searchQuery) {
     }
 }
 
-// "https://omdbapi.com/?s=fast&apikey=b59e5615" becomes `https://omdbapi.com/?s=${searchQuery}&apikey=b59e5615`
+// "https://omdbapi.com/?s=fast&apikey=b59e5615" becomes  `https://omdbapi.com/?s=${searchQuery}&apikey=b59e5615`
 
 
 
 function renderMovies(movies) {
     if(!movies) return
+    const defaultSearchText = document.querySelector ("search__results");
     const moviesDataWrapper = document.querySelector ('.movies');
     const myInput = document.querySelector('#searchinput') 
     moviesDataWrapper.innerHTML = movies
@@ -46,9 +48,19 @@ function renderMovies(movies) {
 </div>` 
     })
     .join(''); // Join the array to create a single HTML string
+
+
+    if defaultSearchText ? null => display:none  : display moviesDataWrapper
     
    
 }
+
+function defaultSearchText() {
+    
+        
+}
+
+
 
  
 
