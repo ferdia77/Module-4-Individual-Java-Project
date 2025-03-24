@@ -1,0 +1,155 @@
+.nav__wrapper {
+  background-image: url(assets/Cover.png);
+  height: 240px;
+  width: 100%;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 180px;
+  
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+
+.nav__link {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.header__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-size: 50px;
+}
+
+.para__description {
+  font-size: 26px;
+  padding-left: 40px;
+  
+}
+
+.photo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 80px;
+  padding-top: 48px;
+}
+
+
+.crowd__photo {
+  height: 300px;
+  width: 300px;
+}
+
+.scene__photo {
+  height: 300px;
+  width: 300px;
+}
+
+.court__photo {
+  height: 300px;
+  width: 300px;
+}
+
+.courting__photo {
+  height: 300px;
+  width: 300px;
+}
+
+.girls__photo {
+  height: 300px;
+  width: 300px;
+}
+
+.joyceTower__photo {
+  height: 300px;
+  width: 300px;
+}
+
+.zurich {
+  height: 150px;
+  width: 150px;
+}
+
+.jjcentre{
+  height: 150px;
+  width: 150px;
+}
+
+.failte {
+  height: 150px;
+  width: 150px;
+}
+
+.DLR {
+  height: 150px;
+  width: 150px;
+}
+
+.BlackrockBusiness {
+  height: 150px;
+  width: 150px;
+}
+
+.BlackRockVillage {
+  height: 150px;
+  width: 150px;
+}
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 18px
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.sponsor__thanks {
+  font-size: 22px;
+  padding: 24px 40px;
+}
+
+.header__thanks {
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding-top: 60px;
+}
+
+.contact__deets {
+  margin: 18px 0;
+}
+
+.information {
+  font-size: 22px;
+}
